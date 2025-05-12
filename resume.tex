@@ -1,0 +1,109 @@
+\documentclass{resume}
+\usepackage[hidelinks]{hyperref}
+\usepackage[none]{hyphenat}
+\tolerance=1000
+\emergencystretch=3em
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\name{Vadim Anufriev}
+
+\contact{Ras Al Khaimah, UAE}
+\contact{\href{https://github.com/va-an}{github.com/va-an}}
+\contact{\href{mailto:hire@vaan.io}{hire@vaan.io}}
+
+
+\begin{document}
+\makeheader
+
+\begin{ResumeSection}{summary}
+    Experienced Software Engineer with nearly 10~years in backend development, specializing in Rust and decentralized systems. Proven track record of building scalable microservices and optimizing high-load systems.
+\end{ResumeSection}
+
+\begin{ResumeSection}{experience}
+\begin{ResumeSubsection}{org=Haqq Network,position=Staff Software Engineer,location=Remote,duration=Jun 2024 - Present}
+        \begin{itemize}
+            \item Contributed to the development of a blockchain indexer for Cosmos and EVM-compatible networks, focusing on optimization and efficient cross-chain data processing
+            \item Designed, developed, and deployed production-ready backend services in Rust for various projects, implementing both HTTP and gRPC APIs for blockchain infrastructure
+            \item Architected a comprehensive data analytics service that aggregates blockchain data, DEX protocol information, and external API sources into ClickHouse for real-time analytics
+            \item \textbf{Tech Stack:} Rust, ClickHouse, PostgreSQL, Grafana, Posthog
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org=Rho Labs,position=Core Platform Engineer,location=Remote,duration=Nov 2022 - Feb 2024}
+        \begin{itemize}
+            \item Authored multiple backend services in Rust, TypeScript and Go, and developed secure, efficient smart contracts in Solidity, contributing to the fintech startup's core functionalities
+            \item Spearheaded the development of comprehensive monitoring systems using Grafana to oversee service performance and crucial business metrics, significantly enhancing system reliability and decision\mbox{-}making capabilities
+            \item Configured from scratch a metrics system in the Kubernetes cluster using Prometheus, enabling detailed performance tracking and operational insights
+            \item Engineered robust log collection and visualization frameworks with Grafana and Loki, substantially improving system transparency and trouble\mbox{-}shooting processes
+            \item \textbf{Tech Stack:} Blockchain, Smart Contracts, Rust, Go, Solidity, EVM, JavaScript, TypeScript, Kubernetes, Grafana, Prometheus, AWS
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org=Web3 Tech,position=Senior Software Engineer,location=Remote,duration=Aug 2021 - May 2023}
+        \begin{itemize}
+            \item Played a key role in the development and maintenance of a blockchain node written in Scala, supporting smart contracts to enhance system scalability and reliability within a Dockerized environment
+            \item Contributed to the open-source community by managing the publication of source code, fostering collaboration and transparency
+            \item Expanded the functionality of smart contracts and developed features for decentralized file storage using PostgreSQL and S3\mbox{-}compatible storage solutions, significantly improving system versatility and user engagement
+            \item \textbf{Tech Stack:} Blockchain, Smart Contracts, Rust, Scala, Docker, Kubernetes, PostgreSQL
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org=Copper,position=Technical Recruitment Advisor (Rust),location=Remote{, Short-term Contract},duration=Jan 2023 - Feb 2023}
+        \begin{itemize}
+            \item Provided specialized technical expertise as a contract consultant for evaluating Rust programming candidates
+            \item Conducted technical assessments and code reviews for test assignments on a project basis
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org=X5 Retail Group,position=Senior Backend Engineer,location={Moscow, Russia},duration=Aug 2018 - Apr 2021}
+        \begin{itemize}
+            \item Scaled a project from MVP stage, expanding user base from~9 to over 9,000~users, significantly enhancing the application's market presence and user engagement
+            \item Conducted extensive load testing and optimized system bottlenecks, enabling smooth scaling of the system from 100~RPS to 1000~RPS, thereby ensuring robustness and scalability under high usage scenarios
+            \item Mentored junior developers, providing guidance and support to enhance their technical skills and professional growth
+            \item Configured and optimized deployment and operational efficiencies within Kubernetes, reducing memory usage by~25\% and CPU utilization by~20\%, thereby improving system performance and resource management
+            \item \textbf{Tech Stack:} Java, Kotlin, Scala, Spring Framework, Kubernetes, Docker, PostgreSQL, Redis, Kafka
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org=AlfaStrakhovanie,position=Backend Developer,location={Moscow, Russia},duration=Aug 2018 - Aug 2019}
+        \begin{itemize}
+            \item Developed and maintained microservices using Java and Kotlin, ensuring robust and scalable service architecture
+            \item Managed deployment of services in Kubernetes, optimizing continuous integration and delivery pipelines for better deployment practices
+            \item Configured a code linting tool and integrated its checks into the build process, enhancing code quality and consistency across the development team
+            \item \textbf{Tech Stack:} Java, Spring Framework, Docker, PostgreSQL, Ansible, Linux, Elastic Search
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org=CDNvideo,position=Software Developer,location={Moscow, Russia},duration=May 2015 - Apr 2017}
+        \begin{itemize}
+            \item Developed and maintained in-house RESTful API using Python and JavaScript
+            \item Conducted stress tests and performance tuning for Python services utilizing Cassandra storage
+            \item Implemented a prototype video player by creating a plugin for the VAST standard
+            \item Accelerated the creation of new customer accounts from 3~days to 3~hours using Python and Puppet, enhancing operational efficiency
+            \item \textbf{Tech Stack:} Java, Python, JavaScript, Perl, Kubernetes, Docker, PostgreSQL, Cassandra, REST API, Puppet
+        \end{itemize}
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\begin{ResumeSection}{education}
+    \begin{ResumeSubsection}{org={MIREA (Russian Technological University)},position={Master's Degree in Engineering},location={Moscow, Russia},duration=Jan 2017}
+        
+        \medskip
+        Activities and societies:
+        \begin{itemize}
+            \item Research Assistant in a Physics Laboratory
+            \item Chess Club
+            \item University Rock Climbing Team (multiple competition prizes)
+        \end{itemize}
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\begin{ResumeSection}{presentations}
+    \begin{itemize}
+        \item "How we migrated from Java to Scala in high-load project" - \href{https://www.youtube.com/watch?v=7hEcX6lynYU}{YouTube}\hfill\em{2020}
+    \end{itemize}
+\end{ResumeSection}
+
+\end{document}
+
