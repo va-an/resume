@@ -26,6 +26,7 @@
     \smallskip\hrule\medskip
 }{
     \bigskip
+    \smallskip
 }
 
 \define@key{subsection}{org}{\def\subsection@org{#1}}
@@ -40,7 +41,6 @@
     \par\textit\subsection@position
     \smallskip
 }{
-    \bigskip
     \bigskip
 }
 
