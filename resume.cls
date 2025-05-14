@@ -14,10 +14,8 @@
 \def \makename {\huge\textbf\@name}
 
 \newcommand*\@contacts{}
-\newcommand*\contact[1]{
-    \ifx\features\empty {\def\features{\par#1}}
-    \else {\g@addto@macro\@contacts{\par#1}} % append \contact to \@contacts
-    \fi
+\newcommand*\contact[1]{%
+    \g@addto@macro\@contacts{\par#1}%
 }
 \def \makecontact{\llap{\parbox{\textwidth}{\footnotesize\raggedleft\@contacts}}}
 
@@ -44,4 +42,10 @@
 }{
     \bigskip
     \bigskip
+}
+
+\newcommand{\skills}[1]{
+    \smallskip
+    \nopagebreak
+    {\par\textbf{Skills:} #1}
 }
