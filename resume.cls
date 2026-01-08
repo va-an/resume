@@ -49,3 +49,4 @@
     \nopagebreak
     {\par\textbf{Skills:} #1}
 }
+
