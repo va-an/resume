@@ -17,36 +17,45 @@
 \vspace{0.5cm}
 
 \begin{ResumeSection}{summary}
-Software engineer with 10 years of experience, focusing on distributed systems and blockchain infrastructure. Active open source contributor (Bitcoin Development Kit). Track record of scaling systems from MVP to production and optimizing high-load services.
+Software engineer with 10 years of experience, including 4+ years of production Rust for blockchain infrastructure. Open-source contributor to Bitcoin Development Kit (Taproot descriptors, BIP-341, Miniscript). Experience with cross-language FFI (PyO3), async Rust (tokio), and building backend services from MVP to high-load production.
 \end{ResumeSection}
 
 \begin{ResumeSection}{skills}
     \begin{itemize}
-        \item \textbf{Programming Languages:} Rust, Scala, Kotlin, Java, Solidity
+        \item \textbf{Rust:} tokio, actix-web, alloy, tonic, PyO3 (FFI)
+        \item \textbf{Other Languages:} Scala, Kotlin, Java, Solidity, Python
         \item \textbf{Databases:} PostgreSQL, ClickHouse, Redis
-        \item \textbf{Infrastructure:} Docker, Kubernetes, AWS, GitHub Actions
-        \item \textbf{Monitoring:} Grafana, Prometheus, Loki
+        \item \textbf{Infrastructure:} Docker, Kubernetes, AWS, GitHub Actions, Grafana, Prometheus
+    \end{itemize}
+\end{ResumeSection}
+
+\begin{ResumeSection}{Open Source}
+    \textbf{bdk-cli} (Bitcoin Development Kit) | Contributor
+    \begin{itemize}
+        \item Implemented Taproot descriptor support for Miniscript compilation
+        \item Developing unspendable key generation feature for enhanced privacy (BIP-341)
+        \item Implementing descriptor verification for proving random key derivation
     \end{itemize}
 \end{ResumeSection}
 
 \begin{ResumeSection}{experience}
 \begin{ResumeSubsection}{org=Haqq Network,position=Staff Software Engineer,location=Remote,duration=Jun 2024 - Present}
 \begin{itemize}
+    \item Built a backtesting engine executing Python trading strategies inside a Rust runtime via PyO3 FFI bindings
+    \item Architected a data analytics service aggregating blockchain and DEX data into ClickHouse for real-time analytics
     \item Developed a blockchain indexer for Cosmos and EVM-compatible L1 network
     \item Built a proxy backend service for token swap service with usage statistics collection
-    \item Architected a data analytics service aggregating blockchain and DEX data into ClickHouse for real-time analytics
-    \item Developing a backtesting engine for trading strategies across multiple exchanges
 \end{itemize}
-        \skills{Rust (tokio, actix-web, alloy, tonic), ClickHouse, PostgreSQL, Grafana, Docker, Posthog}
+        \skills{Rust (tokio, actix-web, alloy, tonic), ClickHouse, PostgreSQL, Grafana, Docker}
     \end{ResumeSubsection}
 
     \begin{ResumeSubsection}{org=Rho Labs,position=Core Platform Engineer,location=Remote,duration=Nov 2022 - Feb 2024}
 \begin{itemize}
-    \item Developed backend services in Rust, TypeScript and Go for the fintech startup
+    \item Developed backend services in TypeScript, Rust and Go for the fintech startup
     \item Built and deployed smart contracts in Solidity to testnet and mainnet
     \item Set up observability stack: Grafana dashboards, Loki for logs, Prometheus for metrics in Kubernetes
 \end{itemize}
-    \skills{Blockchain, Smart Contracts, Rust, Go, Solidity, EVM, TypeScript, Kubernetes, Grafana, Prometheus, AWS}
+    \skills{Blockchain, Smart Contracts, TypeScript, Go, Solidity, EVM, Rust, Kubernetes, Grafana, Prometheus, AWS}
 \end{ResumeSubsection}
 
     \begin{ResumeSubsection}{org=Web3 Tech,position=Senior Software Engineer,location=Remote,duration=Aug 2021 - May 2023}
@@ -68,40 +77,11 @@ Software engineer with 10 years of experience, focusing on distributed systems a
     \skills{Scala, Kotlin, Java, JVM, Spring Framework, Kubernetes, Docker, PostgreSQL, Redis, Kafka, Microservices}
 \end{ResumeSubsection}
 
-    \begin{ResumeSubsection}{org=AlfaStrakhovanie,position=Backend Developer,location={Moscow, Russia},duration=Aug 2018 - Aug 2019}
-        \begin{itemize}
-            \item Developed and maintained microservices using Java and Kotlin
-            \item Managed deployment of services in Kubernetes, set up CI/CD pipelines
-            \item Configured code linting and integrated it into the build process
-        \end{itemize}
-        \skills{Java, Spring Framework, Docker, PostgreSQL, Ansible, Linux, Elastic Search, CI/CD}
-    \end{ResumeSubsection}
-
-        \begin{ResumeSubsection}{org={AT Consulting},position={Backend Developer},location={Moscow, Russia},duration=Apr 2017 - Jul 2018}
-\begin{itemize}
-    \item Maintained and extended legacy Java applications (Java 6) for enterprise clients
-    \item Developed new features as part of a cross-functional team
-\end{itemize}
-    \skills{Java, Spring Framework, PostgreSQL}
-    \end{ResumeSubsection}
-
-    \begin{ResumeSubsection}{org=CDNvideo,position=Software Developer,location={Moscow, Russia},duration=Dec 2015 - Mar 2017}
-\begin{itemize}
-    \item Developed and maintained in-house RESTful API using Python and JavaScript
-    \item Conducted stress tests and performance tuning for Python services utilizing Cassandra storage
-    \item Implemented a prototype video player by creating a plugin for the VAST standard
-    \item Accelerated the creation of new customer accounts from 3 days to 3 hours using Python and Puppet
-\end{itemize}
-        \skills{Java, Python, JavaScript, Perl, Docker, PostgreSQL, Cassandra, REST API, Puppet}
-    \end{ResumeSubsection}
-\end{ResumeSection}
-
-\begin{ResumeSection}{Consulting}
-    \textbf{Copper} | Jan 2023 - Feb 2023 | Remote \\
-    Technical Recruitment Advisor (Rust)
+    \textbf{Earlier Experience}
     \begin{itemize}
-        \item Provided technical expertise for evaluating Rust programming candidates
-        \item Conducted technical assessments and code reviews for test assignments
+        \item \textbf{AlfaStrakhovanie} | Backend Developer | Aug 2018 -- Aug 2019
+        \item \textbf{AT Consulting} | Backend Developer | Apr 2017 -- Jul 2018
+        \item \textbf{CDNvideo} | Software Developer | Dec 2015 -- Mar 2017
     \end{itemize}
 \end{ResumeSection}
 
@@ -110,21 +90,6 @@ Software engineer with 10 years of experience, focusing on distributed systems a
     \end{ResumeSubsection}
 \end{ResumeSection}
 
-\begin{ResumeSection}{Open Source \& Presentations}
-    \textbf{bdk-cli} (Bitcoin Development Kit) | Contributor
-    \begin{itemize}
-        \item Implemented Taproot descriptor support for Miniscript compilation
-        \item Developing unspendable key generation feature for enhanced privacy (BIP-341)
-        \item Implementing descriptor verification for proving random key derivation
-    \end{itemize}
-
-    \bigskip
-    
-    \textbf{Talks}
-    \begin{itemize}
-        \item "How we migrated from Java to Scala in high-load project" - \href{https://www.youtube.com/watch?v=7hEcX6lynYU}{YouTube}
-    \end{itemize}
-\end{ResumeSection}
 
 \end{document}
 
